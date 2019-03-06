@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 
 <head>
   <meta charset="utf-8">
@@ -16,323 +16,7 @@
   <link href="css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
   <link href="css/style.min.css" rel="stylesheet">
-  <style type="text/css">
-    html,
-    body,
-    header,
-    .carousel {
-      height: 60vh;
-    }
 
-    @media (max-width: 740px) {
-
-      html,
-      body,
-      header,
-      .carousel {
-        height: 100vh;
-      }
-    }
-
-    @media (min-width: 800px) and (max-width: 850px) {
-
-      html,
-      body,
-      header,
-      .carousel {
-        height: 100vh;
-      }
-    }
-
-
-
-    /********************* Shopping Demo-4 **********************/
-    .product-grid4,
-    .product-grid4 .product-image4 {
-      position: relative
-    }
-
-    .product-grid4 {
-      font-family: Poppins, sans-serif;
-      text-align: center;
-      border-radius: 5px;
-      overflow: hidden;
-      z-index: 1;
-      transition: all .3s ease 0s
-    }
-
-    .product-grid4:hover {
-      box-shadow: 0 0 10px rgba(0, 0, 0, .2)
-    }
-
-    .product-grid4 .product-image4 a {
-      display: block
-    }
-
-    .product-grid4 .product-image4 img {
-      width: 100% !important;
-      height: auto;
-    }
-
-    .product-grid4 .pic-1 {
-      opacity: 1;
-      transition: all .5s ease-out 0s
-    }
-
-    .product-grid4:hover .pic-1 {
-      opacity: 0
-    }
-
-    .product-grid4 .pic-2 {
-      position: absolute;
-      top: 0;
-      left: 0;
-      opacity: 0;
-      transition: all .5s ease-out 0s
-    }
-
-    .product-grid4:hover .pic-2 {
-      opacity: 1
-    }
-
-    .product-grid4 .social li a:after,
-    .product-grid4 .social li a:before {
-      content: attr(data-tip);
-      color: #fff;
-      background-color: #000;
-      font-size: 12px;
-      line-height: 20px;
-      border-radius: 3px;
-      padding: 0 5px;
-      white-space: nowrap;
-      opacity: 0;
-      transform: translateX(-50%);
-      position: absolute;
-      left: 50%;
-      top: -30px
-    }
-
-    .product-grid4 .social li a:after {
-      content: '';
-      height: 15px;
-      width: 15px;
-      border-radius: 0;
-      transform: translateX(-50%) rotate(45deg);
-      top: -22px;
-      z-index: -1
-    }
-
-    .product-grid4 .social li a:hover:after,
-    .product-grid4 .social li a:hover:before {
-      opacity: 1
-    }
-
-    .product-grid4 .product-discount-label,
-    .product-grid4 .product-new-label {
-      color: #fff;
-      background-color: #16a085;
-      font-size: 13px;
-      font-weight: 800;
-      text-transform: uppercase;
-      line-height: 45px;
-      height: 45px;
-      width: 45px;
-      border-radius: 50%;
-      position: absolute;
-      left: 10px;
-      top: 15px;
-      transition: all .3s
-    }
-
-    .product-grid4 .product-discount-label {
-      left: auto;
-      right: 10px;
-      background-color: #d7292a
-    }
-
-    .product-grid4:hover .product-new-label {
-      opacity: 0
-    }
-
-    .product-grid4 .product-content {
-      padding: 25px
-    }
-
-    .product-grid4 .title {
-      font-size: 15px;
-      font-weight: 400;
-      text-transform: capitalize;
-      margin: 0 0 7px;
-      transition: all .3s ease 0s
-    }
-
-    .product-grid4 .title a {
-      color: #dadada;
-    }
-
-    .product-grid4 .title a:hover {
-      color: #16a085
-    }
-
-    .product-grid4 .price {
-      color: #16a085;
-      font-size: 17px;
-      font-weight: 700;
-      margin: 0 2px 15px 0;
-      display: block
-    }
-
-    .product-grid4 .price span {
-      color: #909090;
-      font-size: 13px;
-      font-weight: 400;
-      letter-spacing: 0;
-      text-decoration: line-through;
-      text-align: left;
-      vertical-align: middle;
-      display: inline-block
-    }
-
-    .product-grid4 .add-to-cart {
-      border: 1px solid #e5e5e5;
-      display: inline-block;
-      padding: 10px 20px;
-      color: #888;
-      font-weight: 600;
-      font-size: 14px;
-      border-radius: 4px;
-      transition: all .3s
-    }
-
-    .product-grid4:hover .add-to-cart {
-      border: 1px solid transparent;
-      background: #16a085;
-      color: #fff
-    }
-
-    .color {
-      background-color: #16a085;
-    }
-
-    .color-white,
-    .color-white a {
-      color: #fff;
-    }
-
-    .color-white a:hover {
-      color: blue;
-    }
-
-    .product-grid4 .add-to-cart:hover {
-      background-color: #505050;
-      box-shadow: 0 0 10px rgba(0, 0, 0, .5)
-    }
-
-    @media only screen and (max-width:990px) {
-      .product-grid4 {
-        margin-bottom: 30px
-      }
-    }
-
-    h3.h3 {
-      text-align: center;
-      margin: 1em;
-      text-transform: capitalize;
-      font-size: 1.7em;
-    }
-
-    .col-item {
-      border: 2px solid #2323A1;
-      border-radius: 5px;
-      background: #FFF;
-    }
-
-    .col-item .photo img {
-      margin: 0 auto;
-      width: 100%;
-    }
-
-    .col-item .info {
-      padding: 10px;
-      border-radius: 0 0 5px 5px;
-      margin-top: 1px;
-    }
-
-    .col-item:hover .info {
-      background-color: rgba(215, 215, 244, 0.5);
-    }
-
-    .col-item .price {
-      /*width: 50%;*/
-      float: left;
-      margin-top: 5px;
-    }
-
-    .col-item .price h5 {
-      line-height: 20px;
-      margin: 0;
-    }
-
-    .price-text-color {
-      color: #00990E;
-    }
-
-    .col-item .info .rating {
-      color: #003399;
-    }
-
-    .col-item .rating {
-      /*width: 50%;*/
-      float: left;
-      font-size: 17px;
-      text-align: right;
-      line-height: 52px;
-      margin-bottom: 10px;
-      height: 52px;
-    }
-
-    .col-item .separator {
-      border-top: 1px solid #FFCCCC;
-    }
-
-    .clear-left {
-      clear: left;
-    }
-
-    .col-item .separator p {
-      line-height: 20px;
-      margin-bottom: 0;
-      margin-top: 10px;
-      text-align: center;
-    }
-
-    .col-item .separator p i {
-      margin-right: 5px;
-    }
-
-    .col-item .btn-add {
-      width: 50%;
-      float: left;
-    }
-
-    .col-item .btn-add {
-      border-right: 1px solid #CC9999;
-    }
-
-    .col-item .btn-details {
-      width: 50%;
-      float: left;
-      padding-left: 10px;
-    }
-
-    .controls {
-      margin-top: 20px;
-    }
-
-    [data-slide="prev"] {
-      margin-right: 10px;
-    }
-  </style>
 </head>
 
 <body>
@@ -355,17 +39,17 @@
       <div class=" collapse navbar-collapse" id="navbarSupportedContent">
 
         <!-- Left -->
-        <ul class=" navbar-nav mr-auto">
+        <ul class=" navbar-nav mr-auto color-white">
           <li class="nav-item active">
             <a class="nav-link waves-effect" href="#">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link waves-effect" href="#">Shop</a>
+            <a class="nav-link waves-effect" href="#Catagory">Shop</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link waves-effect" href="#">Deals</a>
+            <a class="nav-link waves-effect" href="#deals">Deals</a>
           </li>
           <li class="nav-item">
             <a class="nav-link waves-effect" href='#'>Contact</a>
@@ -374,8 +58,8 @@
 
         <!-- Right -->
         <ul class="navbar-nav nav-flex-icons">
-          <li class="nav-item">
-            <a class="nav-link waves-effect">
+          <li class="nav-item color-white">
+            <a class="nav-link waves-effect " href="checkout-page.html">
               <span class="badge red z-depth-1 mr-1"> 1 </span>
               <i class="fas fa-shopping-cart"></i>
               <span class="clearfix d-none d-sm-inline-block"> Cart </span>
@@ -425,7 +109,7 @@
                 <strong>A bag to fit all your needs, casual, party, or shopping we have it all</strong>
               </p>
 
-              <a href="#" class="btn btn-outline-white btn-lg">Shop Now!
+              <a href="#deals" class="btn btn-outline-white btn-lg">Shop Now!
                 <i class="fas fa-shopping-cart ml-2"></i>
               </a>
             </div>
@@ -459,7 +143,7 @@
                 <strong></strong>
               </p>
 
-              <a href="#" class="btn btn-outline-white btn-lg">Shop
+              <a href="#bags" class="btn btn-outline-white btn-lg">Shop
                 Hand Bags
                 <i class="fas fa-shopping-cart ml-2"></i>
               </a>
@@ -494,7 +178,7 @@
                 <strong>our clutches will keep you in style without that heavy burden of a blackhole purse</strong>
               </p>
 
-              <a href="#" class="btn btn-outline-white btn-lg">Shop
+              <a href="#clutch" class="btn btn-outline-white btn-lg">Shop
                 Clutch Bags
                 <i class="fas fa-shopping-cart ml-2"></i>
               </a>
@@ -507,7 +191,7 @@
         </div>
       </div>
       <!--/Third slide-->
-
+    <div id='Category'></div>
     </div>
     <!--/.Slides-->
 
@@ -522,11 +206,13 @@
     </a>
     <!--/.Controls-->
 
+
   </div>
   <!--/.Carousel Wrapper-->
 
   <!--Main layout-->
   <main>
+
     <div class="container">
 
       <!--Navbar-->
@@ -551,13 +237,13 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Hand Bags</a>
+              <a class="nav-link" href="#bags">Hand Bags</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Clutch Bags</a>
+              <a class="nav-link" href="#clutch">Clutch Bags</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Accesories</a>
+              <a class="nav-link" href="#Accesories">Accesories</a>
             </li>
 
           </ul>
@@ -579,13 +265,15 @@
 
       <!--Grid row-->
 
-      <div class="container">
-        <h3 class="h3">Hand Bags</h3>
+      <!--hand bags-->
+
+      <div class="container" id='bags'>
+        <h3 class="h3" id='deals'>Hand Bags</h3>
         <div class="row">
           <div class="col-md-3 col-sm-6">
             <div class="product-grid4">
               <div class="product-image4">
-                <a >
+                <a href="product-page.html">
                   <img class="pic-1" src="css/brown.jpg">
                   <img class="pic-2" src="css/brown2.jpg">
                 </a>
@@ -599,14 +287,14 @@
                   $14.40
 
                 </div>
-                <a class="add-to-cart" href="">ADD TO CART</a>
+                <a class="add-to-cart" href="product-page.html">View Product</a>
               </div>
             </div>
           </div>
           <div class="col-md-3 col-sm-6">
             <div class="product-grid4">
               <div class="product-image4">
-                <a >
+                <a href="product-page.html" >
                   <img class="pic-1" src="css/black2.jpg">
                   <img class="pic-2" src="css/black.jpg">
                 </a>
@@ -619,14 +307,14 @@
                   $17.60
                   <span>$20.00</span>
                 </div>
-                <a class="add-to-cart" href="">ADD TO CART</a>
+                <a class="add-to-cart" href="product-page.html">View Product</a>
               </div>
             </div>
           </div>
           <div class="col-md-3 col-sm-6">
             <div class="product-grid4">
               <div class="product-image4">
-                <a >
+                <a href="product-page.html">
                   <img class="pic-1" src="css/br.jpg">
                   <img class="pic-2" src="css/br2.jpg">
                 </a>
@@ -640,14 +328,14 @@
                   $14.40
                   <span>$16.00</span>
                 </div>
-                <a class="add-to-cart" href="">ADD TO CART</a>
+                <a class="add-to-cart" href="product-page.html">View Product</a>
               </div>
             </div>
           </div>
           <div class="col-md-3 col-sm-6">
             <div class="product-grid4">
               <div class="product-image4">
-                <a >
+                <a href="product-page.html">
                   <img class="pic-1" src="css/weave.jpg">
                   <img class="pic-2" src="css/weave2.jpg">
                 </a>
@@ -661,7 +349,7 @@
                   $14.40
                   <span>$16.00</span>
                 </div>
-                <a class="add-to-cart" href="">ADD TO CART</a>
+                <a class="add-to-cart" href="product-page.html">View Product</a>
               </div>
             </div>
           </div>
@@ -669,14 +357,15 @@
       </div>
       <hr>
 
+<!--clutch bags-->
 
-      <div class="container">
+      <div class="container" id='clutch'>
         <h3 class="h3">Clutch Bags</h3>
         <div class="row">
           <div class="col-md-3 col-sm-6">
             <div class="product-grid4">
               <div class="product-image4">
-                <a >
+                <a href="product-page.html">
                   <img class="pic-1" src="css/clutch.jpg">
                   <img class="pic-2" src="css/clutch1.jpg">
                 </a>
@@ -690,14 +379,14 @@
                   $14.40
                   <span>$16.00</span>
                 </div>
-                <a class="add-to-cart" href="">ADD TO CART</a>
+                <a class="add-to-cart" href="product-page.html">View Product</a>
               </div>
             </div>
           </div>
           <div class="col-md-3 col-sm-6">
             <div class="product-grid4">
               <div class="product-image4">
-                <a >
+                <a href="product-page.html">
                   <img class="pic-1" src="css/pinkclutch.jpg">
                   <img class="pic-2" src="css/pinkclutch2.jpg">
                 </a>
@@ -710,14 +399,14 @@
                   $17.60
                   <span>$20.00</span>
                 </div>
-                <a class="add-to-cart" href="">ADD TO CART</a>
+                <a class="add-to-cart" href="product-page.html">View Product</a>
               </div>
             </div>
           </div>
           <div class="col-md-3 col-sm-6">
             <div class="product-grid4">
               <div class="product-image4">
-                <a >
+                <a href="product-page.html">
                   <img class="pic-1" src="css/clutch5.jpg">
                   <img class="pic-2" src="css/clutch6.jpg">
                 </a>
@@ -731,14 +420,14 @@
                   $14.40
                   <span>$16.00</span>
                 </div>
-                <a class="add-to-cart" href="">ADD TO CART</a>
+                <a class="add-to-cart" href="product-page.html">View Product</a>
               </div>
             </div>
           </div>
           <div class="col-md-3 col-sm-6">
             <div class="product-grid4">
               <div class="product-image4">
-                <a >
+                <a href="product-page.html">
                   <img class="pic-1" src="css/clutch3.jpg">
                   <img class="pic-2" src="css/clutch4.jpg">
                 </a>
@@ -752,7 +441,99 @@
                   $14.40
                   <span>$16.00</span>
                 </div>
-                <a class="add-to-cart" href="">ADD TO CART</a>
+                <a class="add-to-cart" href="product-page.html">View Product</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+<!--Accesories-->
+
+      <div class="container" id='Accesories'>
+        <h3 class="h3">Accesories</h3>
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="product-grid4">
+              <div class="product-image4">
+                <a href="product-page.html">
+                  <img class="pic-1" src="css/clutch.jpg">
+                  <img class="pic-2" src="css/clutch1.jpg">
+                </a>
+
+                <span class="product-new-label">New</span>
+                <span class="product-discount-label">-10%</span>
+              </div>
+              <div class="product-content">
+                <h3 class="title"><a href="#">Women's Black Top</a></h3>
+                <div class="price">
+                  $14.40
+                  <span>$16.00</span>
+                </div>
+                <a class="add-to-cart" href="product-page.html">View Product</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="product-grid4">
+              <div class="product-image4">
+                <a href="product-page.html">
+                  <img class="pic-1" src="css/pinkclutch.jpg">
+                  <img class="pic-2" src="css/pinkclutch2.jpg">
+                </a>
+
+                <span class="product-discount-label">-12%</span>
+              </div>
+              <div class="product-content">
+                <h3 class="title"><a href="#">Men's Blue Shirt</a></h3>
+                <div class="price">
+                  $17.60
+                  <span>$20.00</span>
+                </div>
+                <a class="add-to-cart" href="product-page.html">View Product</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="product-grid4">
+              <div class="product-image4">
+                <a href="product-page.html">
+                  <img class="pic-1" src="css/clutch5.jpg">
+                  <img class="pic-2" src="css/clutch6.jpg">
+                </a>
+
+                <span class="product-new-label">New</span>
+                <span class="product-discount-label">-10%</span>
+              </div>
+              <div class="product-content">
+                <h3 class="title"><a href="#">Women's Black Top</a></h3>
+                <div class="price">
+                  $14.40
+                  <span>$16.00</span>
+                </div>
+                <a class="add-to-cart" href="product-page.html">View Product</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="product-grid4">
+              <div class="product-image4">
+                <a href="product-page.html">
+                  <img class="pic-1" src="css/clutch3.jpg">
+                  <img class="pic-2" src="css/clutch4.jpg">
+                </a>
+
+                <span class="product-new-label">New</span>
+                <span class="product-discount-label">-10%</span>
+              </div>
+              <div class="product-content">
+                <h3 class="title"><a href="#">Women's Black Top</a></h3>
+                <div class="price">
+                  $14.40
+                  <span>$16.00</span>
+                </div>
+                <a class="add-to-cart" href="product-page.html">View Product</a>
               </div>
             </div>
           </div>
@@ -813,15 +594,15 @@
   <!--Main layout-->
 
   <!--Footer-->
-  <footer class="page-footer text-center  color font-small mt-4 wow fadeIn">
+  <footer class="page-footer text-center color font-small mt-4 wow fadeIn"style='background-color:#16a085;'>
 
     <!--Call to action-->
     <div class="pt-4">
       <a class="btn btn-outline-white" href="#" target="_blank" role="button">Locations
-        <i class="fas fa-download ml-2"></i>
+        <i class="fas fa-map-marker-alt ml-2"></i>
       </a>
-      <a class="btn btn-outline-white" href="#" target="_blank" role="button">CheckOut
-        <i class="fas fa-graduation-cap ml-2"></i>
+      <a class="btn btn-outline-white" href="checkout-page.html" target="_blank" role="button">CheckOut
+        <i class="fas fa-shopping-cart""></i>
       </a>
     </div>
     <!--/.Call to action-->
