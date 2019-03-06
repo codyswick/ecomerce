@@ -187,13 +187,13 @@ header,
   color: #fff
 }
 .color{
-  background-color:#16a085;
+  background-color:#16a085!important;
 }
 .color-white,.color-white a{
-  color: #fff;
+  color: #fff!important;
 }
 .color-white a:hover{
-  color: blue;
+  color: blue!important;
 }
 
 .product-grid4 .add-to-cart:hover {
