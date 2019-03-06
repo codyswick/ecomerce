@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Your Wifes Purse Store</title>
+  <!--my style-->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.min.css" rel="stylesheet">
+  <style type="text/css">
+    html,
+    body,
+    header,
+    .carousel {
+      height: 60vh;
+    }
+
+    @media (max-width: 740px) {
+
+      html,
+      body,
+      header,
+      .carousel {
+        height: 100vh;
+      }
+    }
+
+    @media (min-width: 800px) and (max-width: 850px) {
+
+      html,
+      body,
+      header,
+      .carousel {
+        height: 100vh;
+      }
+    }
+
+
+
+    /********************* Shopping Demo-4 **********************/
+    .product-grid4,
+    .product-grid4 .product-image4 {
+      position: relative
+    }
+
+    .product-grid4 {
+      font-family: Poppins, sans-serif;
+      text-align: center;
+      border-radius: 5px;
+      overflow: hidden;
+      z-index: 1;
+      transition: all .3s ease 0s
+    }
+
+    .product-grid4:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, .2)
+    }
+
+    .product-grid4 .product-image4 a {
+      display: block
+    }
+
+    .product-grid4 .product-image4 img {
+      width: 100% !important;
+      height: auto;
+    }
+
+    .product-grid4 .pic-1 {
+      opacity: 1;
+      transition: all .5s ease-out 0s
+    }
+
+    .product-grid4:hover .pic-1 {
+      opacity: 0
+    }
+
+    .product-grid4 .pic-2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: all .5s ease-out 0s
+    }
+
+    .product-grid4:hover .pic-2 {
+      opacity: 1
+    }
+
+    .product-grid4 .social li a:after,
+    .product-grid4 .social li a:before {
+      content: attr(data-tip);
+      color: #fff;
+      background-color: #000;
+      font-size: 12px;
+      line-height: 20px;
+      border-radius: 3px;
+      padding: 0 5px;
+      white-space: nowrap;
+      opacity: 0;
+      transform: translateX(-50%);
+      position: absolute;
+      left: 50%;
+      top: -30px
+    }
+
+    .product-grid4 .social li a:after {
+      content: '';
+      height: 15px;
+      width: 15px;
+      border-radius: 0;
+      transform: translateX(-50%) rotate(45deg);
+      top: -22px;
+      z-index: -1
+    }
+
+    .product-grid4 .social li a:hover:after,
+    .product-grid4 .social li a:hover:before {
+      opacity: 1
+    }
+
+    .product-grid4 .product-discount-label,
+    .product-grid4 .product-new-label {
+      color: #fff;
+      background-color: #16a085;
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      line-height: 45px;
+      height: 45px;
+      width: 45px;
+      border-radius: 50%;
+      position: absolute;
+      left: 10px;
+      top: 15px;
+      transition: all .3s
+    }
+
+    .product-grid4 .product-discount-label {
+      left: auto;
+      right: 10px;
+      background-color: #d7292a
+    }
+
+    .product-grid4:hover .product-new-label {
+      opacity: 0
+    }
+
+    .product-grid4 .product-content {
+      padding: 25px
+    }
+
+    .product-grid4 .title {
+      font-size: 15px;
+      font-weight: 400;
+      text-transform: capitalize;
+      margin: 0 0 7px;
+      transition: all .3s ease 0s
+    }
+
+    .product-grid4 .title a {
+      color: #dadada;
+    }
+
+    .product-grid4 .title a:hover {
+      color: #16a085
+    }
+
+    .product-grid4 .price {
+      color: #16a085;
+      font-size: 17px;
+      font-weight: 700;
+      margin: 0 2px 15px 0;
+      display: block
+    }
+
+    .product-grid4 .price span {
+      color: #909090;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0;
+      text-decoration: line-through;
+      text-align: left;
+      vertical-align: middle;
+      display: inline-block
+    }
+
+    .product-grid4 .add-to-cart {
+      border: 1px solid #e5e5e5;
+      display: inline-block;
+      padding: 10px 20px;
+      color: #888;
+      font-weight: 600;
+      font-size: 14px;
+      border-radius: 4px;
+      transition: all .3s
+    }
+
+    .product-grid4:hover .add-to-cart {
+      border: 1px solid transparent;
+      background: #16a085;
+      color: #fff
+    }
+
+    .color {
+      background-color: #16a085;
+    }
+
+    .color-white,
+    .color-white a {
+      color: #fff;
+    }
+
+    .color-white a:hover {
+      color: blue;
+    }
+
+    .product-grid4 .add-to-cart:hover {
+      background-color: #505050;
+      box-shadow: 0 0 10px rgba(0, 0, 0, .5)
+    }
+
+    @media only screen and (max-width:990px) {
+      .product-grid4 {
+        margin-bottom: 30px
+      }
+    }
+
+    h3.h3 {
+      text-align: center;
+      margin: 1em;
+      text-transform: capitalize;
+      font-size: 1.7em;
+    }
+
+    .col-item {
+      border: 2px solid #2323A1;
+      border-radius: 5px;
+      background: #FFF;
+    }
+
+    .col-item .photo img {
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .col-item .info {
+      padding: 10px;
+      border-radius: 0 0 5px 5px;
+      margin-top: 1px;
+    }
+
+    .col-item:hover .info {
+      background-color: rgba(215, 215, 244, 0.5);
+    }
+
+    .col-item .price {
+      /*width: 50%;*/
+      float: left;
+      margin-top: 5px;
+    }
+
+    .col-item .price h5 {
+      line-height: 20px;
+      margin: 0;
+    }
+
+    .price-text-color {
+      color: #00990E;
+    }
+
+    .col-item .info .rating {
+      color: #003399;
+    }
+
+    .col-item .rating {
+      /*width: 50%;*/
+      float: left;
+      font-size: 17px;
+      text-align: right;
+      line-height: 52px;
+      margin-bottom: 10px;
+      height: 52px;
+    }
+
+    .col-item .separator {
+      border-top: 1px solid #FFCCCC;
+    }
+
+    .clear-left {
+      clear: left;
+    }
+
+    .col-item .separator p {
+      line-height: 20px;
+      margin-bottom: 0;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .col-item .separator p i {
+      margin-right: 5px;
+    }
+
+    .col-item .btn-add {
+      width: 50%;
+      float: left;
+    }
+
+    .col-item .btn-add {
+      border-right: 1px solid #CC9999;
+    }
+
+    .col-item .btn-details {
+      width: 50%;
+      float: left;
+      padding-left: 10px;
+    }
+
+    .controls {
+      margin-top: 20px;
+    }
+
+    [data-slide="prev"] {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light color scrolling-navbar">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class=" navbar-brand waves-effect" href="#">
+        <strong class="color-white">Your Wifes Purse Store</strong>
+      </a>
+
+      <!-- Collapse -->
+      <button class="color-white navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Left -->
+        <ul class=" navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link waves-effect" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect" href="#">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect" href="#">Deals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect" href='#'>Contact</a>
+          </li>
+        </ul>
+
+        <!-- Right -->
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a class="nav-link waves-effect">
+              <span class="badge red z-depth-1 mr-1"> 1 </span>
+              <i class="fas fa-shopping-cart"></i>
+              <span class="clearfix d-none d-sm-inline-block"> Cart </span>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!--Carousel Wrapper-->
+  <div id="carousel-example-1z" class="carousel slide carousel-fade pt-4" data-ride="carousel">
+
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+
+      <!--First slide-->
+      <div class="carousel-item active">
+        <div class="view" style="background-image: url('css/black.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>Check Out our latest Styles</strong>
+              </h1>
+
+              <p>
+                <strong>Best Prices and styles</strong>
+              </p>
+
+              <p class="mb-4 d-none d-md-block">
+                <strong>A bag to fit all your needs, casual, party, or shopping we have it all</strong>
+              </p>
+
+              <a href="#" class="btn btn-outline-white btn-lg">Shop Now!
+                <i class="fas fa-shopping-cart ml-2"></i>
+              </a>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/First slide-->
+
+      <!--Second slide-->
+      <div class="carousel-item">
+        <div class="view" style="background-image: url('css/brown.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>New Bags everyday for the same low prices</strong>
+              </h1>
+
+              <p>
+                <strong>select a range of colors to match your style</strong>
+              </p>
+
+              <p class="mb-4 d-none d-md-block">
+                <strong></strong>
+              </p>
+
+              <a href="#" class="btn btn-outline-white btn-lg">Shop
+                Hand Bags
+                <i class="fas fa-shopping-cart ml-2"></i>
+              </a>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/Second slide-->
+
+      <!--Third slide-->
+      <div class="carousel-item">
+        <div class="view" style="background-image: url('css/clutch4.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>Latest Clutches for that sleek look</strong>
+              </h1>
+
+              <p>
+                <strong>looking for light?</strong>
+              </p>
+
+              <p class="mb-4 d-none d-md-block">
+                <strong>our clutches will keep you in style without that heavy burden of a blackhole purse</strong>
+              </p>
+
+              <a href="#" class="btn btn-outline-white btn-lg">Shop
+                Clutch Bags
+                <i class="fas fa-shopping-cart ml-2"></i>
+              </a>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/Third slide-->
+
+    </div>
+    <!--/.Slides-->
+
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+
+  </div>
+  <!--/.Carousel Wrapper-->
+
+  <!--Main layout-->
+  <main>
+    <div class="container">
+
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg  color lighten-3 mt-3 mb-5">
+
+        <!-- Navbar brand -->
+        <span class="navbar-brand color-white">Categories:</span>
+
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="basicExampleNav">
+
+          <!-- Links -->
+          <ul class="navbar-nav mr-auto color-white">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">All
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hand Bags</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Clutch Bags</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Accesories</a>
+            </li>
+
+          </ul>
+          <!-- Links -->
+
+          <form class="form-inline">
+            <div class="md-form my-0">
+              <input class="form-control mr-sm-2" style='color:white;' type="text" placeholder="Search" aria-label="Search">
+            </div>
+          </form>
+        </div>
+        <!-- Collapsible content -->
+
+      </nav>
+      <!--/.Navbar-->
+
+      <!--Section: Products v.3-->
+
+
+      <!--Grid row-->
+
+      <div class="container">
+        <h3 class="h3">Hand Bags</h3>
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="product-grid4">
+              <div class="product-image4">
+                <a >
+                  <img class="pic-1" src="css/brown.jpg">
+                  <img class="pic-2" src="css/brown2.jpg">
+                </a>
+
+                <span class="product-new-label">New</span>
+
+              </div>
+              <div class="product-content">
+                <h3 class="title"><a href="#">Women's Brown Bag</a></h3>
+                <div class="price">
+                  $14.40
+
+                </div>
+                <a class="add-to-cart" href="">ADD TO CART</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="product-grid4">
+              <div class="product-image4">
+                <a >
+                  <img class="pic-1" src="css/black2.jpg">
+                  <img class="pic-2" src="css/black.jpg">
+                </a>
+
+                <span class="product-discount-label">-12%</span>
+              </div>
+              <div class="product-content">
+                <div class="price">
+                  <h3 class="title"><a href="#">Men's Blue Shirt</a></h3>
+                  $17.60
+                  <span>$20.00</span>
+                </div>
+                <a class="add-to-cart" href="">ADD TO CART</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="product-grid4">
+              <div class="product-image4">
+                <a >
+                  <img class="pic-1" src="css/br.jpg">
+                  <img class="pic-2" src="css/br2.jpg">
+                </a>
+
+                <span class="product-new-label">New</span>
+
+              </div>
+              <div class="product-content">
+                <h3 class="title"><a href="#">Women's Black Top</a></h3>
+                <div class="price">
+                  $14.40
+                  <span>$16.00</span>
+                </div>
+                <a class="add-to-cart" href="">ADD TO CART</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="product-grid4">
+              <div class="product-image4">
+                <a >
+                  <img class="pic-1" src="css/weave.jpg">
+                  <img class="pic-2" src="css/weave2.jpg">
+                </a>
+
+                <span class="product-new-label">New</span>
+
+              </div>
+              <div class="product-content">
+                <h3 class="title"><a href="#">Women's Black Top</a></h3>
+                <div class="price">
+                  $14.40
+                  <span>$16.00</span>
+                </div>
+                <a class="add-to-cart" href="">ADD TO CART</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+
+      <div class="container">
+        <h3 class="h3">Clutch Bags</h3>
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="product-grid4">
+              <div class="product-image4">
+                <a >
+                  <img class="pic-1" src="css/clutch.jpg">
+                  <img class="pic-2" src="css/clutch1.jpg">
+                </a>
+
+                <span class="product-new-label">New</span>
+                <span class="product-discount-label">-10%</span>
+              </div>
+              <div class="product-content">
+                <h3 class="title"><a href="#">Women's Black Top</a></h3>
+                <div class="price">
+                  $14.40
+                  <span>$16.00</span>
+                </div>
+                <a class="add-to-cart" href="">ADD TO CART</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="product-grid4">
+              <div class="product-image4">
+                <a >
+                  <img class="pic-1" src="css/pinkclutch.jpg">
+                  <img class="pic-2" src="css/pinkclutch2.jpg">
+                </a>
+
+                <span class="product-discount-label">-12%</span>
+              </div>
+              <div class="product-content">
+                <h3 class="title"><a href="#">Men's Blue Shirt</a></h3>
+                <div class="price">
+                  $17.60
+                  <span>$20.00</span>
+                </div>
+                <a class="add-to-cart" href="">ADD TO CART</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="product-grid4">
+              <div class="product-image4">
+                <a >
+                  <img class="pic-1" src="css/clutch5.jpg">
+                  <img class="pic-2" src="css/clutch6.jpg">
+                </a>
+
+                <span class="product-new-label">New</span>
+                <span class="product-discount-label">-10%</span>
+              </div>
+              <div class="product-content">
+                <h3 class="title"><a href="#">Women's Black Top</a></h3>
+                <div class="price">
+                  $14.40
+                  <span>$16.00</span>
+                </div>
+                <a class="add-to-cart" href="">ADD TO CART</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="product-grid4">
+              <div class="product-image4">
+                <a >
+                  <img class="pic-1" src="css/clutch3.jpg">
+                  <img class="pic-2" src="css/clutch4.jpg">
+                </a>
+
+                <span class="product-new-label">New</span>
+                <span class="product-discount-label">-10%</span>
+              </div>
+              <div class="product-content">
+                <h3 class="title"><a href="#">Women's Black Top</a></h3>
+                <div class="price">
+                  $14.40
+                  <span>$16.00</span>
+                </div>
+                <a class="add-to-cart" href="">ADD TO CART</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+
+
+    </div>
+    </div>
+
+
+    <!--Section: Products v.3-->
+
+    <!--Pagination-->
+    <nav class="d-flex justify-content-center wow fadeIn">
+      <ul class="pagination pg-blue">
+
+        <!--Arrow left-->
+        <li class="page-item disabled">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only">Previous</span>
+          </a>
+        </li>
+
+        <li class="page-item active">
+          <a class="page-link" href="#">1
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">3</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">4</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">5</a>
+        </li>
+
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            <span class="sr-only">Next</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!--Pagination-->
+
+    </div>
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <footer class="page-footer text-center  color font-small mt-4 wow fadeIn">
+
+    <!--Call to action-->
+    <div class="pt-4">
+      <a class="btn btn-outline-white" href="#" target="_blank" role="button">Locations
+        <i class="fas fa-download ml-2"></i>
+      </a>
+      <a class="btn btn-outline-white" href="#" target="_blank" role="button">CheckOut
+        <i class="fas fa-graduation-cap ml-2"></i>
+      </a>
+    </div>
+    <!--/.Call to action-->
+
+    <hr class="my-4">
+
+    <!-- Social icons -->
+    <div class="pb-4">
+      <a href="#" target="_blank">
+        <i class="fab fa-facebook-f mr-3"></i>
+      </a>
+
+      <a href="#" target="_blank">
+        <i class="fab fa-twitter mr-3"></i>
+      </a>
+
+      <a href="#" target="_blank">
+        <i class="fab fa-youtube mr-3"></i>
+      </a>
+
+
+      <!-- Social icons -->
+
+      <!--Copyright-->
+      <div class="footer-copyright py-3">
+        © 2019 Copyright:
+        <a href="#" target="_blank"> yourwifespursestore.com </a>
+      </div>
+      <!--/.Copyright-->
+
+  </footer>
+  <!--/.Footer-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
+</body>
+
+</html>
