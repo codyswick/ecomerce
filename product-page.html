@@ -7,6 +7,9 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Product Information</title>
   <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src='js/myjs.js'>
+
+  </script>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
   <!-- Bootstrap core CSS -->
@@ -29,9 +32,8 @@
       </a>
 
       <!-- Collapse -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="fa fa-bars"></span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars" style='color:white;'></span>
       </button>
 
       <!-- Links -->
@@ -51,7 +53,7 @@
             <a class="nav-link waves-effect" href="index.html#deals">Deals</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link waves-effect" >Contact</a>
+            <a class="nav-link waves-effect">Contact</a>
           </li>
         </ul>
 
@@ -59,7 +61,7 @@
         <ul class="navbar-nav nav-flex-icons">
           <li class="nav-item color-white">
             <a class="nav-link waves-effect" href="checkout-page.html">
-              <span class="badge red z-depth-1 mr-1"> 13 </span>
+              <span class="badge red z-depth-1 mr-1 " id='quant'>0</span>
               <i class="fas fa-shopping-cart"></i>
               <span class="clearfix d-none d-sm-inline-block"> Cart </span>
             </a>
@@ -83,7 +85,7 @@
         <!--Grid column-->
         <div class="col-md-6 mb-4">
 
-          <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/14.jpg" class="img-fluid" alt="">
+          <img src="css/brown.jpg" class="img-fluid" alt="brown Purse" >
 
         </div>
         <!--Grid column-->
@@ -95,9 +97,9 @@
           <div class="p-4">
 
             <div class="mb-3">
-              <a href="">
+              <!--a href="">
                 <span class="badge purple mr-1">Category 2</span>
-              </a>
+              </a>-->
               <a href="">
                 <span class="badge blue mr-1">New</span>
               </a>
@@ -108,21 +110,34 @@
 
             <p class="lead">
               <span class="mr-1">
-                <del>$200</del>
+                <!--<del>$14.40</del>-->
               </span>
-              <span>$100</span>
+              <span>$14.40</span>
             </p>
 
             <p class="lead font-weight-bold">Description</p>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor suscipit libero eos atque quia ipsa
-              sint voluptatibus!
-              Beatae sit assumenda asperiores iure at maxime atque repellendus maiores quia sapiente.</p>
+            <p>Exquisitely crafted in luxurious croc-embossed leather, this take-anywhere tote from Brahmin offers expert-level organization in a classic, structured silhouette that always looks chic and never goes out of style.
+              <ul>
+                  <li>10"L adjustable double handles</li>
+                  <li>Top zip closure</li>
+                  <li>Exterior features gold-tone hardware and 1 back slide pocket</li>
+                  <li>Interior features 1 zip pocket, 1 zip jewelry pocket, 2 organizer pockets, key clip and pen loops</li>
+                  <li>13" W x 10" H x 5" D; (width is measured across bottom of handbag)</li>
+                  <li>Silhouette is based off 5'9" model</li>
+                  <li>1.9 lbs approximate weight</li>
+                  <li>Created for Macy's</li>
+                  <li>Need more info? Click and play the video under the photo today!</li>
+                  <li>Leather</li>
+                  <li>Imported</li>
+                  <li>Web ID: 2734547</li>
+              </ul>
+            </p>
 
             <form class="d-flex justify-content-left">
               <!-- Default input -->
-              <input type="number" value="1" aria-label="Search" class="form-control" style="width: 100px">
-              <button class="btn color btn-md my-0 p"style='background-color:#16a085;' type="submit">Add to cart
+              <input type="number" value="1" aria-label="Search" id='amount' class="form-control" style="width: 100px">
+              <button onclick="addtocart()" class="btn color btn-md my-0 p" style='background-color:#16a085;' type="button">Add to cart
                 <i class="fas fa-shopping-cart ml-1"></i>
               </button>
 
@@ -145,11 +160,9 @@
         <!--Grid column-->
         <div class="col-md-6 text-center">
 
-          <h4 class="my-4 h4">Additional information</h4>
+          <h4 class="my-4 h4">Customer's also viewed:</h4>
 
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus suscipit modi sapiente illo soluta odit
-            voluptates,
-            quibusdam officia. Neque quibusdam quas a quis porro? Molestias illo neque eum in laborum.</p>
+          <p>Check out these items that we recently searched by other customers.</p>
 
         </div>
         <!--Grid column-->
@@ -161,31 +174,105 @@
       <div class="row wow fadeIn">
 
         <!--Grid column-->
-        <div class="col-lg-4 col-md-12 mb-4">
 
-          <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/11.jpg" class="img-fluid" alt="">
 
+        <div class="container" id='bags'>
+          <h3 class="h3" id='deals'></h3>
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <div class="product-grid4">
+                <div class="product-image4">
+                  <a href="product-page.html">
+                    <img class="pic-1" src="css/brown.jpg">
+                    <img class="pic-2" src="css/brown2.jpg">
+                  </a>
+
+                  <span class="product-new-label">New</span>
+
+                </div>
+                <div class="product-content">
+                  <h3 class="title"><a href="#">Women's Brown Bag</a></h3>
+                  <div class="price">
+                    $14.40
+
+                  </div>
+                  <a class="add-to-cart" href="product-page.html">View Product</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="product-grid4">
+                <div class="product-image4">
+                  <a href="product-page.html">
+                    <img class="pic-1" src="css/black2.jpg">
+                    <img class="pic-2" src="css/black.jpg">
+                  </a>
+
+                  <span class="product-discount-label">-12%</span>
+                </div>
+                <div class="product-content">
+                  <div class="price">
+                    <h3 class="title"><a href="#">Men's Blue Shirt</a></h3>
+                    $17.60
+                    <span>$20.00</span>
+                  </div>
+                  <a class="add-to-cart" href="product-page.html">View Product</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="product-grid4">
+                <div class="product-image4">
+                  <a href="product-page.html">
+                    <img class="pic-1" src="css/br.jpg">
+                    <img class="pic-2" src="css/br2.jpg">
+                  </a>
+
+                  <span class="product-new-label">New</span>
+
+                </div>
+                <div class="product-content">
+                  <h3 class="title"><a href="#">Women's Black Top</a></h3>
+                  <div class="price">
+                    $14.40
+                    <span>$16.00</span>
+                  </div>
+                  <a class="add-to-cart" href="product-page.html">View Product</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="product-grid4">
+                <div class="product-image4">
+                  <a href="product-page.html">
+                    <img class="pic-1" src="css/weave.jpg">
+                    <img class="pic-2" src="css/weave2.jpg">
+                  </a>
+
+                  <span class="product-new-label">New</span>
+
+                </div>
+                <div class="product-content">
+                  <h3 class="title"><a href="#">Women's Black Top</a></h3>
+                  <div class="price">
+                    $14.40
+                    <span>$16.00</span>
+                  </div>
+                  <a class="add-to-cart" href="product-page.html">View Product</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-4 col-md-6 mb-4">
-
-          <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/12.jpg" class="img-fluid" alt="">
-
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-4 col-md-6 mb-4">
-
-          <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/13.jpg" class="img-fluid" alt="">
-
-        </div>
-        <!--Grid column-->
-
+        <hr>
       </div>
-      <!--Grid row-->
+    </div>
+
+
+    </div>
+    <!--Grid column-->
+
+
 
     </div>
   </main>
@@ -243,8 +330,8 @@
   <script type="text/javascript">
     // Animations initialization
     new WOW().init();
-
   </script>
+
 </body>
 
 </html>
