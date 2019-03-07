@@ -13,3 +13,12 @@ function addtocart(){
 
 
 }
+
+
+function active(){
+  alert('as');
+  var element = document.getElementById("home");
+  element.classList.remove("active");
+}
+
+}
