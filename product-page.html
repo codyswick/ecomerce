@@ -7,9 +7,9 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Product Information</title>
   <link rel="stylesheet" href="css/style.css">
-  <script type="text/javascript" src='js/myjs.js'>
 
-  </script>
+
+
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
   <!-- Bootstrap core CSS -->
@@ -54,7 +54,7 @@
             <a class="nav-link waves-effect" href="index.html#deals">Deals</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link waves-effect">Contact</a>
+            <a class="nav-link waves-effect" data-toggle="modal" data-target="#contactModal">Contact</a>
           </li>
         </ul>
 
@@ -86,7 +86,7 @@
         <!--Grid column-->
         <div class="col-md-6 mb-4">
 
-          <img src="css/brown.jpg" class="img-fluid" alt="brown Purse" >
+          <img src="css/brown.jpg" class="img-fluid" alt="brown Purse">
 
         </div>
         <!--Grid column-->
@@ -120,25 +120,25 @@
 
             <p>Exquisitely crafted in luxurious croc-embossed leather, this take-anywhere tote from Brahmin offers expert-level organization in a classic, structured silhouette that always looks chic and never goes out of style.
               <ul>
-                  <li>10"L adjustable double handles</li>
-                  <li>Top zip closure</li>
-                  <li>Exterior features gold-tone hardware and 1 back slide pocket</li>
-                  <li>Interior features 1 zip pocket, 1 zip jewelry pocket, 2 organizer pockets, key clip and pen loops</li>
-                  <li>13" W x 10" H x 5" D; (width is measured across bottom of handbag)</li>
-                  <li>Silhouette is based off 5'9" model</li>
-                  <li>1.9 lbs approximate weight</li>
-                  <li>Created for Macy's</li>
-                  <li>Need more info? Click and play the video under the photo today!</li>
-                  <li>Leather</li>
-                  <li>Imported</li>
-                  <li>Web ID: 2734547</li>
+                <li>10"L adjustable double handles</li>
+                <li>Top zip closure</li>
+                <li>Exterior features gold-tone hardware and 1 back slide pocket</li>
+                <li>Interior features 1 zip pocket, 1 zip jewelry pocket, 2 organizer pockets, key clip and pen loops</li>
+                <li>13" W x 10" H x 5" D; (width is measured across bottom of handbag)</li>
+                <li>Silhouette is based off 5'9" model</li>
+                <li>1.9 lbs approximate weight</li>
+                <li>Created for Macy's</li>
+                <li>Need more info? Click and play the video under the photo today!</li>
+                <li>Leather</li>
+                <li>Imported</li>
+                <li>Web ID: 2734547</li>
               </ul>
             </p>
 
             <form class="d-flex justify-content-left">
               <!-- Default input -->
-              <input type="number" value="1" aria-label="Search" id='amount' class="form-control" style="width: 100px">
-              <button onclick="addtocart()" class="btn color btn-md my-0 p" style='background-color:#16a085;' type="button">Add to cart
+              <input type="number" value="1" aria-label="Search" id='amount' class="form-control " style="width: 100px">
+              <button class="btn color btn-md my-0 p" style='background-color:#16a085;' onclick='addtocart()' type="button">Add to cart
                 <i class="fas fa-shopping-cart ml-1"></i>
               </button>
 
@@ -318,7 +318,69 @@
   </footer>
   <!--/.Footer-->
 
+  <!-- Modal-->
+  <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog form-dark" role="document">
+      <!--Content-->
+      <div class="modal-content  " style="background-repeat: no-repeat; background: #16a085;width: 100%; ">
+        <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
+          <!--Header-->
+          <div class="modal-header text-center pb-4">
+            <h3 class="modal-title color-white font-weight-bold" id="myModalLabel"><strong>CONTACT</strong> <a class="green-text font-weight-bold"><strong> US</strong></a></h3>
+            <button type="button" class="close" style='color:#c5ecfd' data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <!--Body-->
+          <div class="modal-body">
+            <!--Body-->
+
+            <form method="post" role='form' action="">
+              <div class=" control mb-5">
+
+                <input type="text" name="name" placeholder='Your Name' class="form-control validate white-text">
+                <label for="name">Name</label>
+
+                <input type="text" name="phone" placeholder='999-999-9999' class="form-control validate white-text">
+                <label for="phone">Phone</label>
+
+
+                <input type="email" name="mail" placeholder='Your-Email@email.com' class="form-control validate white-text">
+                <label data-error="wrong" data-success="right" for="mail">Email</label>
+
+              </div>
+              <div class="form-group">
+                <label for="message">Comment:</label>
+                <textarea class="form-control" rows="5" name="message" placeholder="message"></textarea>
+              </div>
+
+              <!--Grid row-->
+              <div class="row d-flex align-items-center mb-4">
+
+                <!--Grid column-->
+                <div class="text-center mb-3 col-md-12">
+                  <button type="submit" value='Send' class="btn color btn-block btn-rounded z-depth-1">Send Message</button>
+                </div>
+                <!--Grid column-->
+
+
+              </div>
+              <!--Grid row-->
+            </form>
+
+            <!--Grid row-->
+
+
+          </div>
+        </div>
+      </div>
+      <!--/.Content-->
+    </div>
+  </div>
+
+
   <!-- SCRIPTS -->
+
   <!-- JQuery -->
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <!-- Bootstrap tooltips -->
@@ -332,6 +394,21 @@
     // Animations initialization
     new WOW().init();
   </script>
+  <script>
+    function addtocart() {
+
+      var y = parseInt(document.getElementById("amount").value);
+      var x = parseInt(document.getElementById("quant").innerHTML);
+
+      if (y > 0) {
+        document.getElementById("quant").innerHTML = x + y;
+      } else {
+        alert('You Buy Now');
+      }
+    }
+  </script>
+
+
 
 </body>
 

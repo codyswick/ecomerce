@@ -316,3 +316,20 @@ h3.h3 {
 {
     margin-right: 10px;
 }
+
+
+/*modal contact */
+.form-control {
+  background: transparent !important;
+  color: black !important;
+  border: 0 !important;
+  border-bottom: 2px solid #c5ecfd !important;
+}
+
+label {
+  color: white;
+}
+
+.form-control::placeholder {
+  color: #c5ecfd !important;
+}
