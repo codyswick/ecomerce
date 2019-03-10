@@ -64,6 +64,13 @@
               <span class="clearfix d-none d-sm-inline-block"> Cart </span>
             </a>
           </li>
+          <li class="nav-item color-white">
+            <a class="nav-link waves-effect " data-toggle='modal' data-target='#signupModal'>
+
+              <i class="fas fa-sign-in-alt"></i>
+              <span class="clearfix d-none d-sm-inline-block"> Sign In </span>
+            </a>
+          </li>
 
         </ul>
 
@@ -131,7 +138,7 @@
               </div>
 
               <!--email-->
-              <div class="md-form mb-5">
+              <div class=" mb-5">
                 <input type="text" id="email" class="form-control" placeholder="youremail@example.com">
                 <label for="email" class="">Email (optional)</label>
               </div>
@@ -143,7 +150,7 @@
               </div>
 
               <!--address-2-->
-              <div class="md-form mb-5">
+              <div class=" mb-5">
                 <input type="text" id="address-2" class="form-control" placeholder="Apartment or suite">
                 <label for="address-2" class="">Address 2 (optional)</label>
               </div>
@@ -394,6 +401,63 @@
       <!--/.Content-->
     </div>
   </div>
+
+  <!-- Modal signup-->
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog form-dark" role="document">
+      <!--Content-->
+      <div class="modal-content  " style="background-repeat: no-repeat; background: #16a085;width: 100%; ">
+        <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
+          <!--Header-->
+          <div class="modal-header text-center pb-4">
+            <h3 class="modal-title color-white font-weight-bold" id="myModalLabel"><strong>Sign In</strong></h3>
+            <button type="button" class="close" style='color:#c5ecfd' data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <!--Body-->
+          <div class="modal-body">
+            <!--Body-->
+
+            <form method="post" role='form' action="">
+              <div class=" control mb-5">
+
+                <input type="text" name="name" placeholder='User Name / or Email' class="form-control validate white-text">
+                <label for="name">User Name</label>
+
+                <input type="text" name="phone" placeholder='Password' class="form-control validate white-text">
+                <label for="phone">Password</label>
+
+
+
+
+              <!--Grid row-->
+              <div class="row d-flex align-items-center mb-4">
+
+                <!--Grid column-->
+                <div class="text-center mb-3 col-md-12">
+                  <button type="submit" value='Send' class="btn color btn-block btn-rounded z-depth-1">Sign in</button>
+                </div>
+                <!--Grid column-->
+
+
+              </div>
+              <!--Grid row-->
+            </form>
+
+            <!--Grid row-->
+
+
+          </div>
+        </div>
+      </div>
+      <!--/.Content-->
+    </div>
+  </div>
+
+
+
+
 
 
 
